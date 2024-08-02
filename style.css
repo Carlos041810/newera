@@ -9,14 +9,12 @@ html {
 body {
     display: block;
     text-align: center;
-    margin: 0; /* Asegura que no haya márgenes inesperados */
 }
 
 .metodo1, .metodo2 {
     display: flex;
     margin: 0 auto;
-    width: 80%; /* Porcentaje del ancho del contenedor */
-    max-width: 500px; /* Ancho máximo */
+    width: 500px;
     height: 100px;
     background-size: cover;
     border-radius: 13px;
@@ -26,11 +24,8 @@ body {
     color: rgb(0, 54, 99);
     text-shadow: 2px 2px 4px rgba(72, 221, 241, 0.716), 0 0 10px rgba(168, 168, 232, 0.8);
     font-size: 30px;
-    align-items: center; /* Alinea el texto verticalmente */
-    justify-content: center; /* Centra el texto horizontalmente */
 }
 
-/* Imágenes específicas */
 .metodo1 {
     background-image: url(img/perdergrasa.jpg);
 }
@@ -45,13 +40,13 @@ body {
     text-decoration: none; /* Quita el subrayado */
     font-size: inherit; /* Hereda el tamaño de fuente del div */
     text-shadow: inherit; /* Hereda el texto de sombra del div */
+    display: flex; /* Permite centrar el texto verticalmente si se usa flex en el contenedor */
+    align-items: center; /* Alinea el texto verticalmente */
 }
 
-/* Ajustes para pantallas de hasta 768px de ancho */
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* Ajustes para pantallas de hasta 768px de ancho */
     .metodo1, .metodo2 {
         width: 90%; /* Ajusta el ancho en dispositivos móviles */
         padding-top: 120px; /* Ajusta el padding para que el contenido no se vea cortado */
-        font-size: 24px; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
     }
 }
