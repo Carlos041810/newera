@@ -43,3 +43,14 @@ body {
     display: flex; /* Permite centrar el texto verticalmente si se usa flex en el contenedor */
     align-items: center; /* Alinea el texto verticalmente */
 }
+.metodo1, .metodo2 {
+    width: 80%; /* Porcentaje del ancho del contenedor */
+    max-width: 500px; /* Ancho máximo */
+    height: auto; /* Altura automática para mantener la relación de aspecto */
+}
+@media (max-width: 768px) { /* Ajustes para pantallas de hasta 768px de ancho */
+    .metodo1, .metodo2 {
+        width: 90%; /* Ajusta el ancho en dispositivos móviles */
+        padding-top: 120px; /* Ajusta el padding para que el contenido no se vea cortado */
+    }
+}
