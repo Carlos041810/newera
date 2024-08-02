@@ -1,5 +1,9 @@
 html {
-    background-color: rgb(13, 12, 68);
+    background-image: url(img/fondoweb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     font-size: 15px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(197, 226, 249);
@@ -21,8 +25,7 @@ body {
     padding-top: 160px;
     padding-left: 30px; 
     background-position: center;
-    color: rgb(0, 54, 99);
-    text-shadow: 2px 2px 4px rgba(72, 221, 241, 0.716), 0 0 10px rgba(168, 168, 232, 0.8);
+    text-shadow: 6px 6px 9px rgba(72, 221, 241, 0.866), 0 0 20px rgba(168, 168, 232, 0.921);
     font-size: 25px;
 }
 
@@ -31,17 +34,23 @@ body {
 }
 
 .metodo2 {
-    background-image: url(img/abdminales.jpg);
+    background-image: url(img/abdominales.jpg);
 }
 
 /* Estilo para los enlaces dentro de los divs */
 .metodo1 a, .metodo2 a {
-    color: rgb(0, 54, 99);
+    color: rgb(13, 13, 14);
     text-decoration: none; /* Quita el subrayado */
     font-size: inherit; /* Hereda el tamaño de fuente del div */
     text-shadow: inherit; /* Hereda el texto de sombra del div */
     display: flex; /* Permite centrar el texto verticalmente si se usa flex en el contenedor */
     align-items: center; /* Alinea el texto verticalmente */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Transición suave para color y sombra del texto */
+}
+
+.metodo1 a:hover, .metodo2 a:hover {
+    color: rgb(0, 153, 255); /* Ajusta el color al que desees */
+    text-shadow: 6px 6px 9px rgba(72, 221, 241, 0.866), 0 0 20px rgba(168, 168, 232, 0.921);
 }
 
 @media (max-width: 768px) { /* Ajustes para pantallas de hasta 768px de ancho */
