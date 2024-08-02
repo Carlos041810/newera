@@ -19,11 +19,11 @@ body {
     background-size: cover;
     border-radius: 13px;
     padding-top: 160px;
-    padding-left: 30px; /* Usar px en minúsculas */
+    padding-left: 30px; 
     background-position: center;
     color: rgb(0, 54, 99);
     text-shadow: 2px 2px 4px rgba(72, 221, 241, 0.716), 0 0 10px rgba(168, 168, 232, 0.8);
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .metodo1 {
@@ -31,7 +31,7 @@ body {
 }
 
 .metodo2 {
-    background-image: url(img/abdminales.png);
+    background-image: url(img/abdminales.jpg);
 }
 
 /* Estilo para los enlaces dentro de los divs */
