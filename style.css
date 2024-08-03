@@ -15,12 +15,13 @@ html {
 body {
     display: block;
     text-align: center;
+    margin: 0;
 }
 .container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Espacio entre los divs */
+    gap: 10px; /* Espacio entre los divs */
     padding-top: 30px;
 }
 .metodo1, .metodo2 {
@@ -61,8 +62,11 @@ body {
     text-shadow: 6px 6px 9px rgba(72, 221, 241, 0.866), 0 0 20px rgba(168, 168, 232, 0.921);
 }
 
+/* Media query para pantallas más pequeñas */
 @media (max-width: 768px) {
-    .Metodo1, .Metodo2 {
-        flex: 100%;
+    .metodo1, .metodo2 {
+        flex: 1 1 100%; /* Hace que los divs se apilen en una columna cuando el ancho es menor a 768px */
+        width: 90%; /* Ajusta el ancho a 90% del contenedor padre */
+        max-width: 500px; /* Asegúrate de que los divs no se hagan demasiado grandes en pantallas grandes */
     }
 }
