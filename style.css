@@ -1,27 +1,45 @@
-html {
+html{
     background-image: url(img/fondoweb.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
-    font-size: 15px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    color: rgb(197, 226, 249);
-    padding: 10px;
-    text-shadow: 2px 2px 4px rgba(72, 221, 241, 0.716), 0 0 10px rgba(168, 168, 232, 0.8);
+    background-size: cover;
+    background-position-y: 100px;
+
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    font-family: Arial;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.logo{
+
+    width: 200px;
+    margin: -65px;
+    margin-left: -80%;
+    
+    
 }
 
-body {
-    display: block;
-    text-align: center;
-    margin: 0;
-}
 .container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px; /* Espacio entre los divs */
+    gap: 10px; 
     padding-top: 30px;
 }
 .metodo1, .metodo2 {
@@ -49,24 +67,24 @@ body {
 /* Estilo para los enlaces dentro de los divs */
 .metodo1 a, .metodo2 a {
     color: rgb(13, 13, 14);
-    text-decoration: none; /* Quita el subrayado */
+    text-decoration: none; 
     font-size: inherit; /* Hereda el tamaño de fuente del div */
     text-shadow: inherit; /* Hereda el texto de sombra del div */
-    display: flex; /* Permite centrar el texto verticalmente si se usa flex en el contenedor */
-    align-items: center; /* Alinea el texto verticalmente */
-    transition: color 0.3s ease, text-shadow 0.3s ease; /* Transición suave para color y sombra del texto */
+    display: flex; 
+    align-items: center; 
+    transition: color 0.3s ease, text-shadow 0.3s ease; 
 }
 
 .metodo1 a:hover, .metodo2 a:hover {
-    color: rgb(0, 153, 255); /* Ajusta el color al que desees */
+    color: rgb(0, 153, 255); 
     text-shadow: 6px 6px 9px rgba(72, 221, 241, 0.866), 0 0 20px rgba(168, 168, 232, 0.921);
 }
 
 /* Media query para pantallas más pequeñas */
 @media (max-width: 768px) {
     .metodo1, .metodo2 {
-        flex: 1 1 100%; /* Hace que los divs se apilen en una columna cuando el ancho es menor a 768px */
-        width: 90%; /* Ajusta el ancho a 90% del contenedor padre */
-        max-width: 500px; /* Asegúrate de que los divs no se hagan demasiado grandes en pantallas grandes */
+        flex: 1 1 100%; 
+        width: 90%; 
+        max-width: 500px;
     }
 }
